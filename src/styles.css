@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.55);
+  position: relative;
+  margin: 0;
+  margin-top: 100px;
+}
+
+
+label{
+  font-family: 'Comfortaa', cursive;
+  text-align:center;
+
+}
+input{
+  font-family: 'Comfortaa', cursive;
+
+}
+p{
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+}
+
+a{
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+}

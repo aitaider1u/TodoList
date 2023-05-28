@@ -1,0 +1,30 @@
+
+<div class="container" >
+  <div class="container-header" >
+    <p class="todo-list-title"> {{todo!.name}} </p>
+    <i  (click)="handleAddTask()" class="  add-item bi bi-plus-square-fill"></i>
+
+  </div>
+  <div class="container-body" >
+    <div (dblclick)="handleSetTaskToEdit(task.id)" class="card-task" *ngFor="let task of todo!.tasks">
+      <p class="description-task"> {{ task.description }}</p>
+      <div class="done-div" *ngIf="task.state">
+        <p> Done</p>
+        <i class="icon-done bi bi-check-lg"></i>
+      </div>
+
+      <div>
+        <button  (click)="handleRemoveTask(task.id)" class="delete-button">X</button>
+      </div>
+    </div>
+
+    <app-task-to-edit  *ngIf="tdListService.taskToEdit"  [taskToEdit]="tdListService.taskToEdit">
+    </app-task-to-edit>
+
+    <app-add-new-task  *ngIf="tdListService.addTask">
+
+    </app-add-new-task>
+
+  </div>
+</div>
+

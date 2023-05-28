@@ -1,0 +1,17 @@
+<div class="gird-cards">
+
+  <div *ngFor="let item of todos"  class="card-todo-container">
+    <div class="card-todo-header">
+      <p class="todo-title"> {{item.name}}</p>
+    </div>
+    <div class="card-todo-body">
+      <p class="description-todo">
+        {{item.description}}
+      </p>
+      <button class="view-button"  (click)="handleViewTodoList(item.id)"> View</button>
+    </div>
+  </div>
+
+</div>
+
+

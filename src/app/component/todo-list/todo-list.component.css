@@ -1,0 +1,102 @@
+.container{
+  width: 600px;
+  margin: 10px;
+  background-color: rgba(214, 236, 241, 0.87);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 0px black;
+}
+
+.container-header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-width: 5px;
+
+}
+
+.add-item{
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  font-size: 30px;
+  color: rgba(98, 105, 112, 0.87);
+}
+.add-item:hover{
+  opacity: 0.6;
+}
+.add-item:active{
+  opacity: 0.8;
+}
+
+
+.card-task{
+  margin: 20px 30px;
+  padding: 30px;
+  display: flex;
+  position: relative;
+  background-color: rgba(201, 175, 175, 0.23);
+  border-style: solid;
+  justify-content: space-between;
+}
+
+.delete-button{
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  border: none;
+  background-color:  rgba(201, 175, 175, 0.23);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color:  black;
+  color: white;
+}
+
+.delete-button:hover{
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+p{
+  margin: 0 ;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+.todo-list-title{
+  font-weight: bolder;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.description-task{
+  font-weight: bolder;
+  font-size: 15px;
+  flex: 5;
+}
+
+
+.done-div{
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-done{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: forestgreen;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: white;
+}

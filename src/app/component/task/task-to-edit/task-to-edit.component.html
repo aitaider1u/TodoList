@@ -1,0 +1,33 @@
+<div class="container-edit">
+
+  <div class="container">
+    <div class="container-header">
+      <p class="container-title"> Edit The Task</p>
+    </div>
+      <form class="container-body" [formGroup]="editForm" (ngSubmit)="handleEditTask(taskToEdit.id)">
+      <div class="item-body">
+          <label class="label-item">description</label>
+          <input formControlName="description" class="input-text-item" type="Text" [value]="taskToEdit!.description">
+        </div>
+
+        <div class="item-body">
+          <label class="label-item">Done ? </label>
+          <input  formControlName="state" class="input-check-box-item" type="checkbox" [value]="!taskToEdit!.state" >
+        </div>
+
+        <div class="item-body">
+          <div class="button-container">
+            <button class="edit-button"  type="submit">Edit</button>
+          </div>
+        </div>
+      </form>
+
+
+  </div>
+
+
+
+</div>
+
+
+

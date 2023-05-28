@@ -1,0 +1,25 @@
+<div class="container-edit">
+  <div class="container">
+    <div class="container-header">
+      <p class="container-title"> Add New Task</p>
+    </div>
+    <form class="container-body" [formGroup]="editForm" (ngSubmit)="handleAddNewTask()">
+      <div class="item-body">
+        <label class="label-item">description</label>
+        <input formControlName="description" class="input-text-item" type="Text" >
+      </div>
+
+      <div class="item-body">
+        <label class="label-item">Done ? </label>
+        <input  formControlName="state" class="input-check-box-item" type="checkbox" >
+      </div>
+
+      <div class="item-body">
+        <div class="button-container">
+          <button class="edit-button"  type="submit">Add</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
