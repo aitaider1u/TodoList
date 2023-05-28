@@ -42,4 +42,8 @@ export class TaskToEditComponent implements OnInit{
     )
   }
 
+  handleExitEditATask() {
+    this.todoListService.taskToEdit = undefined;
+  }
+
 }

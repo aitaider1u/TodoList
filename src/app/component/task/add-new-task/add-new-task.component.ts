@@ -41,5 +41,7 @@ export class AddNewTaskComponent {
     )
   }
 
-
+  handleExitAddATask() {
+    this.todoListService.addTask = false;
+  }
 }

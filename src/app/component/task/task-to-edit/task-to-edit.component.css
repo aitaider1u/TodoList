@@ -12,9 +12,9 @@
   bottom: 0;
   top: 0;
   margin-top: -100px;
-
 }
 .container{
+  position: relative;
   width: 50%;
   height: 250px;
   background-color: #ffffff;
@@ -22,6 +22,15 @@
   flex-direction: column;
   border: none;
   border-radius: 20px;
+}
+
+.exit-edit{
+  background-color: snow;
+  color: black;
+  position: absolute;
+  font-size: 30px;
+  right: 10px;
+  top: 10px;
 }
 
 /* -----------------  header   ----------------- */
